@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlayerScoresCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLk-OV-7ah">
+                        <rect key="frame" x="249" y="11" width="60" height="22"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="RcZ-MX-ll8"/>
+                            <constraint firstAttribute="height" constant="22" id="wNO-QN-S0h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwj-c2-BiH">
+                        <rect key="frame" x="10" y="11" width="30" height="22"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ajd-4Y-2kL"/>
+                            <constraint firstAttribute="height" constant="22" id="hX9-vY-jyG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-yG-6tH">
+                        <rect key="frame" x="60" y="11" width="169" height="22"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="JEB-cG-2E1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="OLk-OV-7ah" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6BI-Nm-C35"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OLk-OV-7ah" secondAttribute="trailing" constant="3" id="Obh-ae-YDf"/>
+                    <constraint firstItem="QAN-yG-6tH" firstAttribute="leading" secondItem="gwj-c2-BiH" secondAttribute="trailing" constant="20" id="X4F-PN-AQa"/>
+                    <constraint firstItem="OLk-OV-7ah" firstAttribute="leading" secondItem="QAN-yG-6tH" secondAttribute="trailing" constant="20" id="apI-fY-A89"/>
+                    <constraint firstItem="QAN-yG-6tH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mAe-9i-VGT"/>
+                    <constraint firstItem="gwj-c2-BiH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q1w-Fb-TD7"/>
+                    <constraint firstItem="gwj-c2-BiH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="rub-bS-7ot"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="namesLabel" destination="QAN-yG-6tH" id="QBq-eb-1pu"/>
+                <outlet property="positionsLabel" destination="gwj-c2-BiH" id="a6x-y8-LGx"/>
+                <outlet property="scoresLabel" destination="OLk-OV-7ah" id="TUG-LU-z0D"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
